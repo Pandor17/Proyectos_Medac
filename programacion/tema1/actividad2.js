@@ -10,3 +10,12 @@
 9. La fecha de nacimiento de una persona.
 10. El signo del zodíaco de una persona.*/
 
+let precioPan = 1.5;//el punto y coma no es extrictamente necesario pero sí de buena praxis.
+let nombreConstelacion = 'Sagitario';
+let dni = "12345678 B"; //se pueden usar tanto comillas simples como dobles para las cadenas de texto. Útil por ejemplo:
+    let ejemploFraseConComillas = 'ella dijo "hola"'; //de esta manera se pueden sacar por pantalla comillas sin que genere errores
+let matriculaCoche = '1234 AAA';
+//no continuo porque son siempre igual. 
+//Saco por pantalla las variables para comprobar que están correctas y uso ejemplo para salto de linea
+console.log(precioPan+"\n"+nombreConstelacion,dni,ejemploFraseConComillas,matriculaCoche);
+
