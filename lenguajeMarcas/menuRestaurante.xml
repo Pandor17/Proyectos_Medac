@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <primer_plato>
+        <opcion_1>
+            Ensalada
+        </opcion_1>
+        <opcion_2>
+            Picadillo de tomate
+        </opcion_2>
+    </primer_plato>
+    <segundo_plato>
+        <opcion_1>
+            Carne
+        </opcion_1>
+        <opcion_2>
+            Pescado
+        </opcion_2>
+    </segundo_plato>
+    <postre>
+        <opcion_1>
+            tarta
+        </opcion_1>
+        <opcion_2>
+            café
+        </opcion_2>
+    </postre>
+</menu>

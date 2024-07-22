@@ -11,7 +11,7 @@ lo siguiente:
 9. La fecha de nacimiento de una persona.
 10. El signo del zodíaco de una persona.
 """
-precioPan = 1.5
+precio_pan = 1.5
 nombreConstelacion = "Sagitario"
 dni = '3847393E'
 lista = [1,2,3,4]
@@ -26,6 +26,6 @@ def saludar():
 if __name__ == "__main__": #Comúnmente utilizado en scripts de Python para separar 
                            #la lógica de ejecución del código reusable.
     saludar()
-    print (precioPan)
+    print (precio_pan)
     print (nombreConstelacion)
     print (lista)
