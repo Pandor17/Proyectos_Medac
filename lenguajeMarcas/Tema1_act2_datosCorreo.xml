@@ -1,0 +1,36 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<datos_correo>
+    <remitente>
+        <nombre>
+            pepito perez
+        </nombre>
+        <correo_electronico>
+            pepitoperez@gmail.com
+        </correo_electronico>
+    </remitente>
+    <destinatario>
+        <nombre>
+            agapito disousa
+        </nombre>
+        <correo_electronico>
+            agapitodisousa@gmail.com
+        </correo_electronico>
+    </destinatario>
+    <asunto>
+        ALSDKJFALKDSJFALSKDJFSLAKF  
+    </asunto>
+    <cuerpo>
+        <parrafo1>
+            lasdkjflakdjflaksdjfjladjflasdkjfjladkjfladkjfkdfjd
+        </parrafo1>
+        <parrafo2>
+            laskdjfldjfladjfladkfladjfladfldjflkdjfsdfieiekndnffhdi
+        </parrafo2>
+    </cuerpo>
+    <archivo_adjunto>
+        blabal
+    </archivo_adjunto>
+    <firma>
+        pepito perez
+    </firma>
+</datos_correo>
