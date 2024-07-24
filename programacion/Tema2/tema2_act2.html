@@ -1,0 +1,30 @@
+<!--#Realiza un programa en Java que simule la cafetería de una facultad.
+#El programa pedirá los siguientes datos al usuario:
+#   1. Cantidad de cafés que se van a tomar.
+#   2. Cantidad de tostadas que se van a tomar.
+#   3. Cantidad de zumos de naranja natural que se van a tomar.
+#El usuario deberá introducir la cantidad de cada uno de estos productos, pudiendo ser 0 si no desea tomar alguno de ellos.
+#El programa deberá calcular y mostrar cuánto deberá el pagar el usuario, siendo los precios los siguientes:
+#   1. Precio de 1 café: 1.1€
+#   2. Precio de 1 tostada: 1.5€
+#   #3. Precio de 1 zumo de naranja natural: 2€ -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido de cafeteria</title>
+</head>
+<body>
+  <script>
+    //recogida de datos
+    let n_cafes = prompt("¿Cuántos cafés desea tomar?");
+    let n_tostadas = prompt("¿Cuántas tostadas?");
+    let n_zumos = prompt("¿y zumos de naranja?");
+    
+    //cálculo del precio total
+    let precio_total = n_cafes*1.1 + n_tostadas*1.5 + n_zumos*2;
+    console.log("El precio a pagar en caja es: " + precio_total);
+  </script>
+</body>
+</html>
