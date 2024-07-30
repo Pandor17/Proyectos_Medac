@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    padding: 20px;
+    margin-top: 50px;
 }
 
 /* Encabezados */
@@ -23,9 +23,42 @@ h4 {
     margin-left: 40px;
 }
 
+/*nav*/
+nav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex; /*Esto hace que el contenedor nav sea un contenedor flex y centra sus hijos horizontalmente.*/
+    justify-content: center;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+}
+nav a:hover {
+    background-color: #3498db;
+}
+
+
+
 /* Párrafos */
 p {
     margin-bottom: 20px;
+}
+
+/* Listas */
+ol, ul, dl {
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+dt {
+    font-weight: bold;
 }
 
 /* Enlaces */
@@ -58,6 +91,7 @@ button:hover {
 /* Contenedores */
 .container {
     max-width: 1200px;
+    display: block;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
