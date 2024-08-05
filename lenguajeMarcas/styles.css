@@ -125,3 +125,45 @@ footer {
 footer p {
     margin: 0;
 }
+
+
+/*Formularios*/
+/*legend del fielsed*/
+fieldset{
+    margin: 20px;
+    border-radius: 5px; /* Esquinas redondeadas */
+
+}
+fieldset p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+legend{
+    font-size: larger;
+    font-weight: bold;
+    padding: 5px;
+    margin: 20px;
+    color: #fff;
+    background-color: #032e6b;
+    border-radius: 5px; /* Esquinas redondeadas del legend */
+    border: 2px solid #615f5f; /* Borde del legend */
+
+
+}
+fieldset textarea{
+    width:100%;
+
+    
+}
+
+
+/*TABLAS*/
+table{
+    margin: 20px;
+    text-align: center;
+}
+.tabla_centrada {
+    display: flex;
+    justify-content: center;
+}
