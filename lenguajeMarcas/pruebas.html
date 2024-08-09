@@ -3,72 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fieldset con Tabla Centrada</title>
+    <title>Rango de 1 a 10</title>
     <style>
-        fieldset {
-            border: 2px solid #000; /* Borde del fieldset */
-            padding: 10px; /* Espaciado interno */
-            border-radius: 5px; /* Esquinas redondeadas */
-            margin: 10px; /* Espaciado externo */
-        }
-
-        legend {
-            font-weight: bold; /* Texto en negrita */
-            border: 2px solid #000; /* Borde del legend */
-            padding: 5px; /* Espaciado interno del legend */
-            border-radius: 5px; /* Esquinas redondeadas del legend */
-        }
-
-        textarea {
-            width: 100%; /* Ancho del textarea */
-            box-sizing: border-box; /* Incluye el borde y el relleno en el cálculo del ancho */
-        }
-
-        .centrado {
-            text-align: center; /* Centrar el contenido del div */
-        }
-
-        .centrado table {
-            margin: 0 auto; /* Centrar la tabla */
-            border-collapse: collapse;
-            width: auto; /* Ancho automático de la tabla */
-        }
-
-        .centrado th, .centrado td {
-            border: 1px solid #000;
-            padding: 8px;
-            text-align: left;
+        input[type="range"] {
+            width: 100%;
+            max-width: 400px;
         }
     </style>
 </head>
 <body>
-    <fieldset>
-        <legend>Información Personal</legend>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre"><br><br>
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad"><br><br>
-        <input type="submit" value="Enviar">
-    </fieldset>
 
-    <fieldset>
-        <legend>Datos Centrados</legend>
-        <div class="centrado">
-            <table>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Edad</th>
-                </tr>
-                <tr>
-                    <td>Juan</td>
-                    <td>25</td>
-                </tr>
-                <tr>
-                    <td>Ana</td>
-                    <td>30</td>
-                </tr>
-            </table>
-        </div>
-    </fieldset>
+    <label for="rango">Selecciona un valor:</label>
+    <input type="range" id="rango" name="rango" min="1" max="10" step="1" value="5">
+    <span id="valor-rango">5</span>
+
+    <script>
+        const slider = document.getElementById('rango');
+        const valorRango = document.getElementById('valor-rango');
+
+        slider.addEventListener('input', function() {
+            valorRango.textContent = slider.value;
+        });
+    </script>
+
 </body>
 </html>

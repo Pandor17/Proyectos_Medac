@@ -1,0 +1,120 @@
+<!--A partir del caso práctico inicial del tema 4 donde se creó una web 
+con recetas de los países con los que trabaja la agencia de viajes Sol y Mar, 
+se pide su adaptación a la nueva versión HTML5. La web debe de cumplir: 
+• Utilizar las etiquetas semánticas para dividir el contenido en cabecera, 
+navegación, contenido principal, secciones, artículos, contenido auxiliar y pie de página.
+• En el contenido auxiliar se puede incluir publicidad, calendario, etc.
+Se puede añadir nuevo contenido para dotar de contenido a los nuevos apartados. 
+• Debe de existir en el menú de navegación enlaces que nos permitan acceder a los apartados de la web. 
+• Debes de incluir también un vídeo en la web, que debes descargarte 
+y tenerlo en local para hacer uso de la etiqueta vídeo. 
+Este vídeo debe de tener relación con el postre indicado. 
+• Por otro lado, también se debe incluir un audio relacionado con el país indicado. 
+Para descargarte videos puedes acceder a YouTube y obtener videos con licencia de uso no comercial 
+o entrar en bancos de videos gratuitos como pixabay. Para el caso del audio también en pixabay 
+tienes bancos de audios.-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Actividad 1 del tema 3">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Pandor17">
+    <title>Recetas del Mundo - Sol y Mar</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <h1>Recetas del Mundo</h1>
+        <p>Bienvenido a nuestra web de recetas de los países con los que trabaja Sol y Mar.</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#recetas">Recetas</a></li>
+            <li><a href="#calendario">Calendario</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de inicio -->
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Descubre las mejores recetas de los países que trabajan con Sol y Mar.</p>
+        </section>
+
+        <!-- Sección de recetas -->
+        <section id="recetas">
+            <h2>Recetas</h2>
+
+            <!-- Artículo de una receta -->
+            <article>
+                <h3>Postre de España: Tarta de Santiago</h3>
+                <p>La Tarta de Santiago es un delicioso postre tradicional de Galicia.</p>
+                <h4>Ingredientes</h4>
+                <ul>
+                    <li>250g de almendra molida</li>
+                    <li>250g de azúcar</li>
+                    <li>5 huevos</li>
+                    <li>Ralladura de limón</li>
+                    <li>Azúcar glas</li>
+                </ul>
+                <h4>Preparación</h4>
+                <p>Mezcla los ingredientes y hornea a 180°C durante 40 minutos.</p>
+
+                <!-- Video relacionado con el postre -->
+                <video controls width="600">
+                    <source src="videos/tarta_santiago.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+
+                <!-- Audio relacionado con España -->
+                <audio controls>
+                    <source src="audios/flamenco.mp3" type="audio/mpeg">
+                    Tu navegador no soporta la etiqueta de audio.
+                </audio>
+            </article>
+
+            <!-- Otro artículo de receta -->
+            <article>
+                <h3>Plato Principal de Italia: Pizza Margherita</h3>
+                <p>La Pizza Margherita es un clásico de la cocina italiana.</p>
+                <h4>Ingredientes</h4>
+                <ul>
+                    <li>Masa de pizza</li>
+                    <li>Tomate</li>
+                    <li>Queso mozzarella</li>
+                    <li>Albahaca fresca</li>
+                    <li>Aceite de oliva</li>
+                </ul>
+                <h4>Preparación</h4>
+                <p>Extiende la masa, añade los ingredientes y hornea a 220°C durante 15 minutos.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Contenido auxiliar -->
+    <aside>
+        <h2>Contenido Auxiliar</h2>
+        <div class="publicidad">
+            <h3>Publicidad</h3>
+            <p>Anuncio de publicidad aquí.</p>
+        </div>
+        <div id="calendario">
+            <h3>Calendario de Eventos</h3>
+            <p>Próximos eventos de cocina y viajes.</p>
+        </div>
+    </aside>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Sol y Mar. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

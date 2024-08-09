@@ -1,0 +1,97 @@
+<!--1. Se pretende crear una página web que contenga un formulario para gestionar
+incidencias técnicas en una empresa, que llegarán al departamento de informática
+para su procesamiento.
+Crear un formulario que contenga la siguiente información:
+ Nombre: (es el nombre del usuario que pone la incidencia)
+ Correo electrónico.
+ Departamento: (lista despegable con los departamentos. Invéntate 5
+departamentos de la empresa).
+ Urgente: (es una casilla de verificación indicando si la incidencia es urgente o
+no).
+ Ubicación: (control de tipo radio donde se debe elegir en qué edificio está el
+usuario. Los valores son principal, auxiliar y externo).
+ Descripción: (Textarea con la descripción de la incidencia)
+ Botones: de envío y reseteo de la información.
+ Los controles deben estar agrupados en tres grupos:
+o Datos personales (nombre, correo electrónico, departamento)
+o Datos incidencia (urgente, ubicación y descripción)
+o Envío (Botones de envío y reseteo)
+
+2. Se pretende crear el plano de unas oficinas gracias a tablas en HTML.-->
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="es">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Pandor17">
+    <title>Formulario y tabla</title>
+    <link rel="stylesheet" href="estilos/styles.css"><!--Hoja de estilos básica-->
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO INCIDENCIAS TÉCNICAS</h1>
+    </header>
+    <div>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Datos personales</legend><!--Nombre del grupo-->
+                <p>Nombre y apellidos: <input type="text" name="nombre" size="40"></p>
+                <p>Correo electrónico: <input type="text" name="correo" size="60"></p>
+                <p>Departamento: 
+                    <select name="departamento">
+                        <option value="" selected="selected"></option>
+                        <option value="1">Informatica</option>
+                        <option value="2">Márquetin</option>
+                        <option value="3">Recursos Humanos</option>
+                    </select></p>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de la incidencia</legend>
+                <p>Es urgente <input type="checkbox" name="urgente"></p>
+                <p>Ubicación: <input type="radio" name="ubicacion"> Central <input type="radio" name="ubicacion"> Externo</p>
+                <p>Detalle la incidencia</p>
+                <p><textarea name="detalles" rows="4"></textarea></p>
+            </fieldset>
+            <fieldset>
+                <legend>Tramitar</legend>
+                <p>
+                    <button type="submit">Enviar</button> 
+                    <button type="reset">Borrar</button>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Plano en formato tabla</legend>
+                <div class="tabla_centrada">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <td>Departamento 1</td>
+                                <td>Sala Multiusos</td>
+                                <td colspan="2">Departamento 2</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td rowspan="2">Sala de reuniones</td>
+                                <td>4</td>
+                                <td rowspan="4">Sala Auxiliar</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Sala Auxiliar 2</td>
+                                <td>6</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </fieldset>
+        </form>
+        
+    </div>
+    <footer>
+
+    </footer>
+</body>

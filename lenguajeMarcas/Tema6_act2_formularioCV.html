@@ -1,0 +1,98 @@
+<!--Se pretende crear un formulario para rellenar un Currículum vitae.
+
+El formulario debe de incluir los siguientes datos:
+• Nombre. Campo de texto que debe de incluir texto de ayuda indicando que se debe
+    de incluir primero los apellidos y luego el nombre.
+• Contraseña: Campo de tipo contraseña.
+• DNI: DNI con el patrón de un DNI español, o sea: 8 dígitos y una letra.
+• Sexo: Opción para elegir el sexo.
+• Incluir foto: Se debe de incluir un campo de tipo file para poder subir un fichero. 
+•Aficiones: Checkbox que incluya idiomas que habla: 
+    Se debe poder elegir entre inglés, francés, alemán, chino, portugués. 
+• Progreso: Barra de progreso que muestre el nivel de manejo de las siguientes habilidades, 
+    teniendo en cuenta que 10 sería el máximo. HTML5 CSS3 JAVASCRIPT. 
+• Número de personas a tu cargo en el último trabajo: un valor numérico que debe de estar limitado 
+    de 0 a 10 personas. 
+• Datos adicionales: Datos extras que queramos añadir al CV, con un área de texto. 
+
+Todos los campos anteriores deben de estar agrupados por contenido común usando <fieldset>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario Currículum Vitae</h1>
+    </header>   
+    <nav>
+        <a href="#datos_personales">Datos de usuario</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#datos_adicionales">Datos adicionales</a>
+    </nav> 
+    <section>
+        <form action="" method="post" enctype="multipart/form-data"> <!--enctype obligatorio al incluir un fiel-->
+            <fieldset id="datos_personales">
+                <legend>Datos de usuario</legend>
+                <!--Campo de texto que debe de incluir texto de ayuda indicando que se debe
+                de incluir primero los apellidos y luego el nombre.-->
+                <p>Nombre: <input type="text" id="nombre" placeholder="Apellidos, nombre"></p>
+                <p>Contraseña: <input type="password"></p> <!--contraseña
+                y campo para dni que solo permite el patrón de DNI español-->
+                <p>DNI: <input type="text" placeholder="12345678A" required pattern="[0-9]{8}[A-Za-z]{1}" required title="El DNI debe contener 8 dígitos seguidos de una letra"></p>
+                <p>Sexo: 
+                    <input type="radio" name="sexo">Femenino
+                    <input type="radio" name="sexo">Masculino
+                </p>
+                <!--campo apra incluir una foto-->
+                <p>Imagen reciente: <input type="file" accept=".pdf, .jpg, .png"></p>
+            </fieldset>
+            <fieldset id="habilidades">
+                <!--•Aficiones: Checkbox que incluya idiomas que habla:                 -->
+                <p>Idiomas:
+                    <input type="checkbox" >Inglés
+                    <input type="checkbox">Alemán
+                    <input type="checkbox" >Chino
+                    <input type="checkbox">Portugués
+                </p>
+                <p>Indica tu progreso en las siguientes habilidades (siendo el 10 el máximo nivel)</p>
+                <ul>
+                    <li>HTML</li>  <input type="range" id="rango" name="rango" min="1" max="10" step="1" value="5">
+                    <span id="valor-rango">5</span>
+                    <!--Escript para que se muestre el valor numérico elegido-->
+                    <script> 
+                        const slider = document.getElementById('rango');
+                        const valorRango = document.getElementById('valor-rango');
+                
+                        slider.addEventListener('input', function() {
+                            valorRango.textContent = slider.value;
+                        });
+                    </script>
+                    <li>CSS3</li> <input type="range" id="rango" name="rango" min="1" max="10" step="1" value="5">
+                    <li>JAVASCRIPT</li> <input type="range" id="rango" name="rango" min="1" max="10" step="1" value="5">
+                </ul>          
+                 <!-- Número de personas a tu cargo en el último trabajo:  limitado de 0 a 10 personas. -->
+                <p>Número de personas a tu cargo en el último trabajo: <input type="number" min="0" max="10" required></p>
+                <legend>Habilidades</legend>
+                
+            </fieldset>
+            <fieldset id="datos_adicionales">
+                <legend>Datos adicionales</legend>
+                <p>Háblanos sobre tí: <textarea name="sobreti" id="sobreti" rows="10"></textarea></p>
+            </fieldset>
+            <p>
+                <button type="submit">Enviar</button> 
+                <button type="reset">Borrar</button>
+            </p>
+        </form>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -27,18 +27,16 @@ h4 {
 nav {
     background-color: #333;
     overflow: hidden;
-    position: fixed;
     width: 100%;
-    top: 0;
-    display: flex; /*Esto hace que el contenedor nav sea un contenedor flex y centra sus hijos horizontalmente.*/
-    justify-content: center;
+    top: 10px;
+
+    
 }
 nav a {
-    float: left;
-    display: block;
     color: white;
-    text-align: center;
-    padding: 14px 20px;
+    padding: 5px;
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre los elementos */
 }
 nav a:hover {
     background-color: #3498db;
@@ -53,7 +51,7 @@ p {
 
 /* Listas */
 ol, ul, dl {
-    margin-bottom: 20px;
+    
     margin-left: 40px;
 }
 
@@ -113,6 +111,14 @@ header h1 {
     font-size: 24px;
 }
 
+section{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color:#918f8f;
+}
+
+
 /* Estilo de pie de página */
 footer {
     background-color: #3498db;
@@ -132,7 +138,7 @@ footer p {
 fieldset{
     margin: 20px;
     border-radius: 5px; /* Esquinas redondeadas */
-
+    background-color: #f4f4f4;
 }
 fieldset p{
     margin-left: 10px;
