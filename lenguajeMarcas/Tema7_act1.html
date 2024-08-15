@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="español">
+<!--
+A partir del formulario del caso inicial que se creó en el tema anterior, 
+se pide aplicarle las reglas CSS adecuadas para conseguir las siguientes características:
+● Cada apartado debe tener un color de fondo diferente. 
+  Utilizar selectores de identificador.
+● Las leyendas de los fieldset deben ser azules y con un tamaño de 2.0 superior al
+  tamaño de la fuente raíz. Usar una clase.
+● Todo el formulario debe tener un ancho de 480px. Indícalo en el CSS y no uses ni
+  identificadores ni clases.
+● Poner un título al formulario. Crear un identificador para darle formato. Debe tener
+  el mismo ancho que el formulario.
+● Las palabras publicidad, precios, regalo y ocupación deben de estar en blanco con
+  fondo negro. Utilizar una clase.
+-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de consulta</title>
+        <style>
+            #Datos {background-color: rgb(127, 202, 255);}
+            #Tematica {background-color: rgb(124, 124, 124);}
+            #Consulta {background-color: rgb(220, 150, 70);}
+            .leyendas{color: blue;font-size: 2rem;}
+            form {width: 480px;}
+            #titulo{width: 480px; text-align: center; background-color: blueviolet;}
+            .destacar{color: antiquewhite; background-color: blue;}
+        </style>
+    </head>
+<!--CUERPO YA CREADO EN EL TEMA TEÓRICO-->
+    <body>
+        <h1 id="titulo">FORMULARIO</h1>
+        <br><br>
+        <form action="proceso.php" method="post">
+            <!--Datos personales-->
+            <fieldset id="Datos">
+                <legend class="leyendas"><b>Datos personales</b></legend>
+                <p>Nombre: <input type="text" name="nombre"></p>
+                <p>Correo electrónico: <input type="text" name="correo"></p>
+                <p><input type="checkbox" name="publicidad">¿Quiéres que te enviémos <span class="destacar">publicidad</span>?</p>
+            </fieldset>
+            
+            <!--Temática de la consulta-->
+            <fieldset id="Tematica">
+                <legend class="leyendas"><b>Temática y mes de vacaciones</b></legend>
+                <br>
+                <select name="opciones">
+                    <option value="1">Hotel</option>
+                    <option value="2">Avión</option>
+                    <option value="3">Paquete vacacional</option>
+                </select>
+                <br><br>
+                <input type="radio" name="eleccion">Julio
+                <input type="radio" name="eleccion">Agosto
+                <input type="radio" name="eleccion">Septiembre
+            </fieldset>
+
+            <!--Texto de la consulta-->
+            <fieldset id="Consulta">
+                <legend class="leyendas"><b>Consulta y regalo</b></legend>
+                <textarea name="" id=""></textarea>
+                <p><input type="fecha" name="fecha"></p>
+                <p>Rango de <span class="destacar">precios</span> (1000-2000€): <input type="range" min="1000" max="2000" step="100"></p>
+                <p>¿De qué color quieres el <span class="destacar">regalo</span>? <input type="color"></p>
+                <p>Grado de <span class="destacar">ocupación</span>: <progress max="100" value="80"></p>
+            </fieldset>
+
+            <!--Envio-->
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
