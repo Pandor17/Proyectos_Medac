@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--Crear una lista ordenada "ol" con tres item. En uno de esos tres item definir en forma
+anidada otra lista, pero no ordenada "ul". Crear dos reglas de estilo distintas para los item
+que descienden de la lista ordenada y los que descienden de la lista no ordenada.
+
+     Se deben utilizar selectores de hijos.
+     Para el caso de la lista ordenada se deben mostrar sus items en azul y con un
+    tamaño 1.5 superior al tamaño raíz.
+     Para el caso de la lista desordenada se deben mostrar sus items en rojo y con un
+    tamaño 2.0 superior al tamaño raíz.-->
+
+<html lang="español">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="listas">
+        <meta name="author" content="Pandor17">
+        <title>Listas ordanadas y desordenadas</title>
+        <style>
+            ol li{
+                color: blue;
+                font-size: 1.5rem;
+            }
+
+            ul li{
+                color: red;
+                font-size: 2rem;
+            }
+        </style>
+    </head>    
+    <body>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3
+                <ul>
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                </ul>
+            </li>
+        </ol>
+        <br><br>
+        
+        </ul>
+    </body>
+</html>

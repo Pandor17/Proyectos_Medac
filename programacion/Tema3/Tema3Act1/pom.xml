@@ -11,4 +11,11 @@
         <maven.compiler.target>19</maven.compiler.target>
         <exec.mainClass>com.mycompany.tema3act1.Tema3Act1</exec.mainClass>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.mycompany</groupId>
+            <artifactId>ActividadesJava4_20</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
