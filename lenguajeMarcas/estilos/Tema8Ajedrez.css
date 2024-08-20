@@ -1,0 +1,108 @@
+*{
+    font-family: verdana;
+    font-size: 1.25rem;
+    
+    border-collapse: collapse;
+}
+h1{
+    font-family: verdana;
+    font-size: 1.5rem;
+    background-color: #732e2e;
+    border:2px black solid;
+    color: azure;
+    text-align: center;
+}
+table{
+    margin: 20px auto;
+    margin-bottom: 15px;
+}
+th{
+   
+    background-color: #939191;
+
+}
+td{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black; /* Añade bordes a las celdas */
+    background-size: contain; /* Asegura que la imagen se ajuste bien a la celda */
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+td.blanco{
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+}
+td.negro{
+    background-color: rgb(196, 124, 124);
+    width: 100px;
+    height: 100px;
+}
+#esquina{
+    width: 30px;
+    height: 30px;
+}
+div{
+    margin-left: 20px;
+    padding: 20px;
+    padding-left: 40px;
+    border: 2px black solid;
+    text-align: justify;
+    font-family: Arial;
+}
+
+
+/*Fichas*/
+td img{
+    height: 80px;
+}
+.peonNegro{
+    background-image: url('../fotitos/piezas_ajedrez/peon_negro-removebg-preview.png');
+    background-size: auto 80px;
+}
+.peonBlanco{
+    background-image: url('../fotitos/piezas_ajedrez/peon_blanco-removebg-preview.png');
+    background-size: auto 80px;
+}
+.alfilBlanco{
+    background-image: url('../fotitos/piezas_ajedrez/alfil_blanco-removebg-preview.png');
+    background-size: auto 80px;
+}
+.alfilNegro{
+    background-image: url('../fotitos/piezas_ajedrez/alfil_negro-removebg-preview.png');
+    background-size: auto 80px;
+}
+.caballoNegro{
+    background-image: url('../fotitos/piezas_ajedrez/caballo_negro-removebg-preview.png');
+    background-size: auto 80px;
+}
+.caballoBlanco{
+    background-image: url('../fotitos/piezas_ajedrez/caballo_blanco-removebg-preview.png');
+    background-size: auto 80px;
+}
+.torreNegra{
+    background-image: url('../fotitos/piezas_ajedrez/torre_negra-removebg-preview.png');
+    background-size: auto 80px;
+}
+.torreBlanca{
+    background-image: url('../fotitos/piezas_ajedrez/torre_blanca-removebg-preview.png');
+    background-size: auto 80px;
+}
+.reinaNegra{
+    background-image: url('../fotitos/piezas_ajedrez/reina_negra-removebg-preview.png');
+    background-size: auto 80px;
+}
+.reinaBlanca{
+    background-image: url('../fotitos/piezas_ajedrez/reina_blanca-removebg-preview.png');
+    background-size: auto 80px;
+}
+.reyNegro{
+    background-image: url('../fotitos/piezas_ajedrez/rey_negro-removebg-preview.png');
+    background-size: auto 80px;
+}
+.reyBlanco{
+    background-image: url('../fotitos/piezas_ajedrez/rey_blanco-removebg-preview.png');
+    background-size: auto 80px;
+}

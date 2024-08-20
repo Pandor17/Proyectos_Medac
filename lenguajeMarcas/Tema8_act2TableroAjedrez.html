@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--A partir del tablero de ajedrez diseñado en el tema y que se muestra 
+en la imagen adjunta se piden realizar ciertas modificaciones
+    • Incluir las letras de las columnas y las filas también en la parte final 
+    y derecha respectivamente. 
+    • Investiga por internet alguna jugada famosa de ajedrez y reprodúcela en el tablero. 
+    Para ello descárgate las piezas necesarias
+    • Añadir un título que indique cómo se llama la jugada famosa 
+    Debe tener un borde negro, fondo de color “chocolate” y tamaño de fuente 1.5 
+    superior al tamaño raíz. • Incluir un párrafo debajo del tablero explicando la jugada. 
+    Utiliza otra fuente de letra, que tenga un borde negro de 2px. 
+    Debe estar separado del tablero 15px.-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Tablero de ajedrez">
+        <meta name="author" content="Pandor17">
+        <title>Tablero de ajedrez</title>
+        <link rel="stylesheet" href="estilos/Tema8Ajedrez.css">
+    </head>
+    <body>
+        <h1> El sacrificio "desperado" de Bura</h1>
+        <table>
+            <tr>
+                <th id="esquina"></th>
+                <th class="fila">A</th>
+                <th class="fila">B</th>
+                <th class="fila">C</th>
+                <th class="fila">D</th>
+                <th class="fila">E</th>
+                <th class="fila">F</th>
+                <th class="fila">G</th>
+                <th class="fila">H</th>
+                <th id="esquina"></th>
+            </tr>
+            <!-- Filas del tablero -->
+            <tr>
+                <th class="columna">1</th>
+                <td class="blanco torreNegra"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro torreNegra"></td>
+                <td class="blanco reyNegro"></td>
+                <td class="negro"></td>
+                <th class="columna">1</th>
+            </tr>
+            <tr>
+                <th class="columna">2</th>
+                <td class="negro peonNegro"></td>
+                <td class="blanco peonNegro"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro peonNegro"></td>
+                <td class="blanco peonNegro"></td>
+                <td class="negro"></td>
+                <td class="blanco peonNegro"></td>
+                <th class="columna">2</th>
+            </tr>
+            <tr>
+                <th class="columna">3</th>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro peonNegro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco peonNegro"></td>
+                <td class="negro"></td>
+                <th class="columna">3</th>
+            </tr>
+            <tr>
+                <th class="columna">4</th>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro alfilBlanco"></td>
+                <td class="blanco"></td>
+                <th class="columna">4</th>
+            </tr>
+            <tr>
+                <th class="columna">5</th>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro reinaBlanca"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro peonBlanco"></td>
+                <th class="columna">5</th>        
+            </tr>
+            <tr>
+                <th class="columna">6</th>
+                <td class="negro"></td>
+                <td class="blanco peonBlanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <th class="columna">6</th>
+            </tr>
+            <tr>
+                <th class="columna">7</th>
+                <td class="blanco"></td>
+                <td class="negro torreBlanca"></td>
+                <td class="blanco peonBlanco"></td>
+                <td class="negro reyBlanco"></td>
+                <td class="blanco caballoNegro"></td>
+                <td class="negro peonBlanco"></td>
+                <td class="blanco peonBlanco"></td>
+                <td class="negro"></td>
+                <th class="columna">7</th>
+            </tr>
+            <tr>
+                <th class="columna">8</th>
+                <td class="negro reinaNegra"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco torreBlanca"></td>
+                <th class="columna">8</th>
+            </tr>
+            <tr>
+                <th id="esquina"></th>
+                <th class="fila">A</th>
+                <th class="fila">B</th>
+                <th class="fila">C</th>
+                <th class="fila">D</th>
+                <th class="fila">E</th>
+                <th class="fila">F</th>
+                <th class="fila">G</th>
+                <th class="fila">H</th>
+                <th id="esquina"></th>
+            </tr>
+        </table>
+        <div>
+            <p>En este duelo, disputado en Yugoslavia en 1982, Bura conducía las piezas blancas ante Paric. Bura contaba con dos peones de desventaja y además tanto su dama como su torre se encontraban atacadas simultáneamente:</p>
+            <p>El cambio de damas que se produce tras 1.Txa1 Cxd4 no es del todo satisfactorio para las blancas, ¿pero qué más pueden hacer? ¡Bura da con la solución!</p>
+            <p>No es muy común ver un sacrificio de dama "desperado" en una casilla vacía—¡y mucho menos que resulte ganador!</p>
+        </div>
+    </body>
+</html>

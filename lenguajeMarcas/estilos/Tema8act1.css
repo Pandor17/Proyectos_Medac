@@ -1,0 +1,30 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.div1{
+    width: 400px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+h3{
+    line-height: 2;
+}
+.div2{
+    margin: 20px;
+}
+
+.div3{
+    margin: 40px;
+    text-align: center;
+}
+.boton{
+    font-size: larger;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    width: 300px;
+    height: 40px;
+    
+   
+}
