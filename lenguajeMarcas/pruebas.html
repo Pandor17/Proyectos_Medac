@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rango de 1 a 10</title>
+    <title>Icono fijo en la página</title>
     <style>
-        input[type="range"] {
-            width: 100%;
-            max-width: 400px;
+        .icono-fijo {
+            position: fixed; /* Fija el icono en la ventana del navegador */
+            bottom: 20px;    /* Se ubica a 20px del borde inferior de la ventana */
+            right: 20px;     /* Se ubica a 20px del borde derecho de la ventana */
+            width: 50px;     /* Ancho del icono */
+            height: 50px;    /* Alto del icono */
+            background-color: lightgray; /* Color de fondo del icono */
+            border-radius: 50%; /* Hace que el icono tenga forma circular */
         }
     </style>
 </head>
 <body>
 
-    <label for="rango">Selecciona un valor:</label>
-    <input type="range" id="rango" name="rango" min="1" max="10" step="1" value="5">
-    <span id="valor-rango">5</span>
+    <div class="icono-fijo">
+        <img src="ruta/a/tu/foto.png" alt="Icono" style="width: 100%; height: 100%;">
+    </div>
 
-    <script>
-        const slider = document.getElementById('rango');
-        const valorRango = document.getElementById('valor-rango');
-
-        slider.addEventListener('input', function() {
-            valorRango.textContent = slider.value;
-        });
-    </script>
+    <div style="height: 2000px;">
+        <!-- Este div es solo para crear contenido en la página y permitir desplazamiento -->
+        Desplázate hacia abajo para ver cómo el icono permanece fijo.
+    </div>
 
 </body>
 </html>
