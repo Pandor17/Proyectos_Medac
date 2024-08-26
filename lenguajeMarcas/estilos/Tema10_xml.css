@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    display: block;
+}
+trabajador{
+    width: 400px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: verdana;
+    margin: 5px;
+    border: 2px solid black;
+    font-size: 1.1rem;
+}
+departamento{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: right;
+    font-weight: bold;
+}
+nombre, apellidos{
+    margin-left: 20px;
+    font-weight: bold;
+}
+cargo, movil, fijo{
+    margin-left: 40px;
+}
