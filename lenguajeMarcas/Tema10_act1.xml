@@ -10,7 +10,7 @@
     <!ELEMENT movil (#PCDATA)>
     <!ELEMENT fijo (#PCDATA)>
     <!ATTLIST trabajador
-        genero(femenino|masculino)#REQUIRED
+        genero (femenino|masculino) #REQUIRED
         id CDATA #IMPLIED>
 ]>
 
@@ -29,6 +29,5 @@
         <cargo>Técnico</cargo>
         <movil>123123123</movil>
         <fijo>123123123</fijo>
-        <genero>femenino</genero>
     </trabajador>
 </empresa>
