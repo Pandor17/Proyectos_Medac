@@ -105,10 +105,10 @@ public class InterfazRegistroPersonas extends JFrame{
         
         //FUNCIONALIDAD DE LOS BOTONES
         this.btInsertar.addActionListener((ActionEvent e) -> {
-            insertarPersona();
+            this.insertarPersona();
         });
         this.btLimpiar.addActionListener((ActionEvent e) -> {
-            limpiarFormulario();
+            this.limpiarFormulario();
         });
     }
     
